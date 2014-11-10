@@ -1,5 +1,5 @@
-var APIKEY = 'AIzaSyCVt_7-WV4xpOiOW40IgpbcUOh4v82aMZs';
-var CHANNEL_ID = 'UCsBb-T69R9pvyOb19tT1Q_A';
+var APIKEY = '__YOUR_API_KEY__';
+var CHANNEL_ID = '__YOUR_CHANNEL_ID__';
 
 function orgAuth(){
   gapi.client.setApiKey(APIKEY);

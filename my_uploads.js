@@ -1,6 +1,6 @@
 var APIKEY = '__YOUR_API_KEY__';
 var CHANNEL_ID = '__YOUR_CHANNEL_ID__';
-var domain =  'http://www.yat-net.com';
+var domain =  '__YOUR_DMAIN__';
 
 function orgAuth(){
   gapi.client.setApiKey(APIKEY);

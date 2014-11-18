@@ -1,5 +1,6 @@
 var APIKEY = '__YOUR_API_KEY__';
 var CHANNEL_ID = '__YOUR_CHANNEL_ID__';
+var domain =  'http://www.yat-net.com';
 
 function orgAuth(){
   gapi.client.setApiKey(APIKEY);
@@ -74,7 +75,7 @@ function displayResult(videoSnippet) {
 	var thumbnail = videoSnippet.thumbnails.default.url;
 	var base = "http://www.youtube.com/embed/";
 	var video_frame = '<iframe id="player" typle="text/html" width="640" height="390" src="' + base + videoId + '?enablejsapi=1&origin=http://www.yat-net.com" frameborder="0"></iframe>';
-	var video_url = base + videoId + '?enablejsapi=1&origin=http://www.yat-net.com';
+	var video_url = base + videoId + '?enablejsapi=1&origin=' + domain;
 	$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 
 	$('#video-container').append(

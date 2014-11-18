@@ -5,7 +5,6 @@ var domain =  'http://www.yat-net.com';
 function orgAuth(){
   gapi.client.setApiKey(APIKEY);
   gapi.client.load('youtube','v3',getUserChannel);
-  dbg(APIKEY);
 }
 
 function getUserChannel(){

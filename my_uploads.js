@@ -75,12 +75,12 @@ function displayResult(videoSnippet) {
 	var base = "http://www.youtube.com/embed/";
 	var video_frame = '<iframe id="player" typle="text/html" width="640" height="390" src="' + base + videoId + '?enablejsapi=1&origin=http://www.yat-net.com" frameborder="0"></iframe>';
 	var video_url = base + videoId + '?enablejsapi=1&origin=' + domain;
-	$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 
 	$('#video-container').append(
 		'<p>' + title + ' - ' + videoId + '</p>' +
  		'<a href="' + video_url + '" class="youtube"><img src="' + thumbnail + '" /></a>'
 	);
+	$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 }
 
 // Retrieve the next page of videos in the playlist.
